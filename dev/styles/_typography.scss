@@ -1,0 +1,4 @@
+.nav {
+    @include fontStyle(22, $montserrat);
+    font-weight: 400;
+}

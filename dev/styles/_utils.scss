@@ -1,0 +1,18 @@
+$black: #333;
+$white: #fff;
+$mustard: #d4bd52;
+$darkgrey: #888;
+$lightgrey: #aaa;
+
+$montserrat: 'Montserrat', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+@mixin fontStyle($sizeValue, $fontFamily) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+    font-family: $fontFamily;
+}
+
+@mixin button($padding, $color, $background) {
+
+}
