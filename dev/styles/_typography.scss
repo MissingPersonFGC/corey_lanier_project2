@@ -46,3 +46,9 @@
         color: $mustard;
     }
 }
+
+.first-gallery__item__headings span {
+    @include fontStyle(28, $montserrat);
+    color: $black;
+    font-weight: bold;
+}
