@@ -1,8 +1,48 @@
 .nav {
     @include fontStyle(22, $montserrat);
-    font-weight: 400;
 }
 
 .language-nav {
     @include fontStyle(12, $roboto);
+}
+
+.header2 {
+    @include fontStyle(30, $montserrat);
+    color: $black;
+}
+
+.header1 {
+    @include fontStyle(80, $montserrat);
+    color: $black;
+    font-weight: 700;
+    width: 680px;
+}
+
+.paragraph {
+
+    &--header {
+        @include fontStyle(28, $roboto);
+        color: $lightgrey;
+    }
+
+    &--largest {
+        color: lighten($lightgrey, 22);
+        @include fontStyle(450, $montserrat);
+    }
+}
+
+.button {
+    @include fontStyle(18, $montserrat);
+}
+
+.main-header__heading__gallery-pan {
+    font-size: 20px;
+
+    &--left {
+        color: $darkgrey;
+    }
+
+    &--right {
+        color: $mustard;
+    }
 }

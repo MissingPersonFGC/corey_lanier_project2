@@ -13,6 +13,21 @@ $roboto: 'Roboto', sans-serif;
     font-family: $fontFamily;
 }
 
-@mixin button($padding, $color, $background) {
-
+@mixin buttonRounded($color, $background, $borderColour) {
+    display: inline-block;
+    padding: 20px 40px;
+    background: $background;
+    color: $color;
+    border: 1px solid $borderColour;
+    border-bottom-left-radius: 30%50px;
+    border-top-left-radius: 30%50px;
+    border-bottom-right-radius: 30%50px;
+    border-top-right-radius: 30%50px;
+    transition: all 0.5s;
+    text-decoration: none;
+    
+    &:hover {
+        background: $color;
+        color: $background;
+    }
 }

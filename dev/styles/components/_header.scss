@@ -1,0 +1,103 @@
+.main-header {
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 10%;
+        padding-left: 80px;
+        padding-bottom: 100px;
+
+        &--1 {
+            width: 60px;
+            height: 3px;
+            background: $black;
+            margin-bottom: 10px;
+        }
+
+        &--2, &--3 {
+            height: 3px;
+            width: 40px;
+            margin-bottom: 10px;
+            background: $lightgrey;
+        }
+
+        &--1, &--2, &--3 {
+            transition: all 0.5s ease;
+        }
+
+        &--3 {
+            margin-bottom: 0;
+        }
+
+        &--2:hover, &--3:hover {
+            width: 60px;
+            background: $black;
+        }
+
+        &--2:hover ~ &--1, &--3:hover ~ &--1 {
+            width: 40px;
+            background: $lightgrey;
+        }
+    }
+
+    &__heading {
+        width: 85%;
+        background: url('../../images/main-image-1.png');
+        background-position: right center;
+        background-size: 60% auto;
+        background-repeat: no-repeat;
+        position: relative;
+
+        hr {
+            width: 60px;
+            height: 2px;
+            border: 0;
+            background: $darkgrey;
+            margin-left: 0;
+        }
+
+        .header1 {
+            margin-bottom: 0;
+        }
+
+        .paragraph--largest {
+            margin: 0;
+        }
+
+        .inner-header-container {
+            position: relative;
+
+            .button {
+                position: absolute;
+                @include buttonRounded($white, $mustard, $mustard);
+                top: 140px;
+                left: 20px;
+            }
+        }
+
+        &__gallery-pan {
+            width: 180px;
+            height: 80px;
+            position: absolute;
+            bottom: 100px;
+            right: 0;
+
+            div {
+                float: left;
+                width: 50%;
+                height: 80px;
+                background: white;
+                text-align: center;
+                padding-top: 25px;
+            }
+        }
+    }
+}

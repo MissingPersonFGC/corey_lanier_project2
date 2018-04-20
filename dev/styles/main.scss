@@ -10,10 +10,11 @@ html {
 
 body {
     max-width: 1920px;
+    width: 100%;
 }
 
 .topbar {
-    padding: 40px 60px;
+    padding: 40px 15%;
     display: flex;
     flex-flow: row space-around;
     align-items: center;
@@ -25,7 +26,7 @@ body {
 }
 
 .nav-wrapper {
-    padding-right: 15%;
+    // padding-right: 7.5%;
 }
 
 .nav {
@@ -75,7 +76,7 @@ body {
 }
 
 .language-nav {
-    padding-right: 30px;
+    // padding-right: 0.5%;
 }
 
 .language-nav__list {
