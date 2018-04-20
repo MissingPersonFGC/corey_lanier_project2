@@ -15,9 +15,17 @@ body {
 .topbar {
     padding: 40px 60px;
     display: flex;
-    flex-flow: row space-between;
+    flex-flow: row space-around;
     align-items: center;
     width: 100%;
+}
+
+.header-image {
+    width: 25%;
+}
+
+.nav-wrapper {
+    padding-right: 15%;
 }
 
 .nav {
@@ -53,6 +61,10 @@ body {
         &__item a, &__item__nested__item a{
             text-decoration: none;
             color: $darkgrey;
+
+            &:hover{
+                border-bottom: 3px solid $mustard;
+            }
         }
 
         &__item--active a {
@@ -60,6 +72,10 @@ body {
             border-bottom: 3px solid $mustard;
         }
     }
+}
+
+.language-nav {
+    padding-right: 30px;
 }
 
 .language-nav__list {
@@ -106,6 +122,24 @@ body {
 
     &__item {
         padding-right: 15px;
+
+        &--numeric {
+            position: relative;
+            
+            span {
+                display: block;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background: $mustard;
+                text-align: center;
+                padding-top: 4px;
+                border-radius: 50%;
+                color: $white;
+                top: -5px;
+                right: 3px;
+            }
+        }
     }
 }
 

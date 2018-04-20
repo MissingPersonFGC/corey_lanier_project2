@@ -2,3 +2,7 @@
     @include fontStyle(22, $montserrat);
     font-weight: 400;
 }
+
+.language-nav {
+    @include fontStyle(12, $roboto);
+}
