@@ -34,6 +34,34 @@
     &--grey {
         color: $darkgrey;
     }
+
+    &--item-name {
+        color: $black;
+        @include fontStyle(16, $roboto);
+        margin: 10px 0;
+    }
+
+    &--item-description {
+        color: lighten($darkgrey, 10);
+        @include fontStyle(16, $roboto);
+        margin: 0;
+    }
+
+    &--item-price {
+        color: $black;
+        @include fontStyle(18, $montserrat);
+        
+        &::before {
+            content: '$';
+            margin-right: 5px;
+        }
+
+        &-original {
+            color: $lightgrey;
+            @include fontStyle(15, $montserrat);
+            text-decoration: line-through;
+        }
+    }
 }
 
 .button {
