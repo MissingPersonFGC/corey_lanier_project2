@@ -71,10 +71,6 @@ body {
     }
 }
 
-.language-nav {
-    // padding-right: 0.5%;
-}
-
 .language-nav__list {
     list-style: none;
 
@@ -158,6 +154,11 @@ body {
             margin-right: 0;
         }
 
+        &2 img {
+            outline: 5px solid white;
+            outline-offset: -35px;
+        }
+
         &__rotated-text {
             transform: rotate(-90deg);
             position: absolute;
@@ -188,7 +189,24 @@ body {
     }
 }
 
+.top-products {
+    margin-top: 160px;
 
+    &__top-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+    
+        &__aside {
+            transform: rotate(90deg);
+        }
+    }
+}
 
 @import 'components/footer';
 

@@ -19,6 +19,7 @@
 }
 
 .paragraph {
+    @include fontStyle(18, $roboto);
 
     &--header {
         @include fontStyle(28, $roboto);
@@ -28,6 +29,10 @@
     &--largest {
         color: lighten($lightgrey, 22);
         @include fontStyle(450, $montserrat);
+    }
+
+    &--grey {
+        color: $darkgrey;
     }
 }
 
@@ -51,4 +56,14 @@
     @include fontStyle(28, $montserrat);
     color: $black;
     font-weight: bold;
+}
+
+.top-products__container__aside span {
+    @include fontStyle(86, $montserrat);
+    color: lighten($lightgrey, 22);
+}
+
+.first-gallery__item__rotated-text {
+    @include fontStyle(16, $roboto);
+    color: $black;
 }
