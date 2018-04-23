@@ -86,7 +86,7 @@
     font-weight: bold;
 }
 
-.top-products__container__aside span {
+.top-products__container::after {
     @include fontStyle(86, $montserrat);
     color: lighten($lightgrey, 22);
 }
@@ -94,4 +94,9 @@
 .first-gallery__item__rotated-text {
     @include fontStyle(16, $roboto);
     color: $black;
+}
+
+.sub-heading__rotated {
+    @include fontStyle(15, $roboto);
+    text-transform: uppercase;
 }
