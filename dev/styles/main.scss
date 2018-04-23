@@ -260,6 +260,18 @@ body {
     }
 }
 
+.sub-heading {
+    width: 70%;
+    margin: 0 auto;
+    text-align: right;
+    background: url('../../images/main-image-2.png');
+    background-size: contain;
+    background-position: left;
+    position: relative;
+    background-repeat: no-repeat;
+    
+}
+
 @import 'components/footer';
 
 @import 'media';
