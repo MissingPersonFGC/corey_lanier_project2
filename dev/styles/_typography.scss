@@ -35,6 +35,12 @@
         color: $darkgrey;
     }
 
+    &--dark-grey {
+        color: darken($darkgrey, 10);
+        @include fontStyle(15.4, $roboto);
+        width: 500px;
+    }
+
     &--item-name {
         color: $black;
         @include fontStyle(16, $roboto);
@@ -99,4 +105,15 @@
 .sub-heading__rotated {
     @include fontStyle(15, $roboto);
     text-transform: uppercase;
+}
+
+h4 {
+    @include fontStyle(12, $montserrat);
+    color: $lightgrey;
+    text-transform: uppercase;
+}
+
+.our-blog h3 {
+    @include fontStyle(20, $montserrat);
+    color: $black;
 }
