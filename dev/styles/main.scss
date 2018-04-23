@@ -261,14 +261,21 @@ body {
 }
 
 .sub-heading {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     text-align: right;
     background: url('../../images/main-image-2.png');
-    background-size: contain;
+    background-size: 65% auto;
     background-position: left;
     position: relative;
     background-repeat: no-repeat;
+
+    &__button {
+        @include buttonRounded($black, $white, $mustard);
+        @include fontStyle(16, $montserrat);
+        font-weight: bold;
+        margin-top: 50px;
+    }
     
 }
 
