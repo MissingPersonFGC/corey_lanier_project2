@@ -86,7 +86,7 @@
     font-weight: bold;
 }
 
-.top-products__container::after {
+.top-products__container::after, .onsale-products__container::after {
     @include fontStyle(86, $montserrat);
     color: lighten($lightgrey, 22);
 }

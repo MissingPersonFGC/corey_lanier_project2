@@ -309,6 +309,71 @@ body {
     }
 }
 
+.onsale-products {
+    margin-top: 160px;
+    position: relative;
+
+    &__top-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin: 0 4%;
+    }
+
+    &__container {
+        margin: 0 auto;
+        width: 70%;
+        position: relative; 
+    
+        &::after {
+            position: absolute;
+                top: 150px;
+                left: -450px;
+                content: 'Summer Sale';
+                display: inline-block;
+                transform: rotate(90deg);
+                font-weight: bold;
+        }
+        
+
+        &__gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            margin-top: 75px;
+
+            &__item {
+                // margin: 0 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                position: relative;
+
+                &1 {
+                    margin-left: 50px;
+                }
+
+                &__image__cart {
+                    position: absolute;
+                    right: 0;
+                    bottom: 110px;
+
+                    a {
+                        display: inline-block;
+                        background: $black;
+                        padding: 10px;
+                        transition: all 0.5s ease;
+
+                        &:hover {
+                            background: $mustard;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @import 'components/footer';
 
 @import 'media';
