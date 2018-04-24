@@ -38,7 +38,6 @@
     &--dark-grey {
         color: darken($darkgrey, 10);
         @include fontStyle(15.4, $roboto);
-        width: 500px;
     }
 
     &--item-name {

@@ -1,0 +1,12 @@
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+
+    div {
+        width: 50%;
+    }
+
+    &__left {
+        color: $white;
+    }
+}
