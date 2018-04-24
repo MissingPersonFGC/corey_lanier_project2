@@ -46,12 +46,13 @@ footer {
     width: 65%;
     padding-top: 120px;
     margin: 0 auto;
-    padding-top: 70px;
 
     &__about {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 30px;
+
+        padding-bottom: 60px;
     }
 
     .tags-container {
@@ -133,7 +134,7 @@ footer {
         padding: 25px 0;
 
         &__policy {
-
+            
             a {
                 color: $white;
                 text-decoration: none;

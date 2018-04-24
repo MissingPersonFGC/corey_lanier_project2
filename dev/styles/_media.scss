@@ -1,0 +1,45 @@
+// Tablet stylings
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) { 
+    
+}
+
+.topbar {
+    padding: 5px 75px;
+}
+
+.header-image {
+    width: 20%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.nav {
+    @include fontStyle(15, $montserrat);
+}
+
+.language-nav {
+    @include fontStyle(10, $roboto);
+}
+
+.nav {
+    &__list {
+        &__item {
+            padding-right: 30px;
+        }
+    }
+}
+
+.language-nav__list {
+    &__item {
+        span {
+            padding-left: 5px;
+        }
+    }
+}
