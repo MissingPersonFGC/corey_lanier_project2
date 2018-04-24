@@ -11,6 +11,7 @@ html {
 body {
     max-width: 1920px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .topbar {
@@ -327,12 +328,12 @@ body {
     
         &::after {
             position: absolute;
-                top: 80px;
-                left: -450px;
-                content: 'Summer Sale';
-                display: inline-block;
-                transform: rotate(90deg);
-                font-weight: bold;
+            top: 80px;
+            left: -450px;
+            content: 'Summer Sale';
+            display: inline-block;
+            transform: rotate(90deg);
+            font-weight: bold;
         }
         
 

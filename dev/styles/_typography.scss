@@ -70,6 +70,18 @@
 
     &--white {
         color: $white;
+
+        &--address {
+            @extend .paragraph--white;
+            @include fontStyle(16, $roboto);
+            margin-bottom: 50px;
+        }
+
+        &--phone {
+            @extend .paragraph--white--address;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -134,4 +146,17 @@ h4 {
         @include fontStyle(16, $montserrat);
         font-weight: bold;
     }
+
+}
+
+h5 {
+    @include fontStyle(16, $montserrat);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $mustard;
+    margin-bottom: 60px;
+}
+
+.tags-container {
+    @include fontStyle(14, $roboto);
 }

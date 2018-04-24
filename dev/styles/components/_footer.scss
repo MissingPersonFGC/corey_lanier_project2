@@ -41,3 +41,111 @@ footer {
         }
     }
 }
+
+.footer-container {
+    width: 65%;
+    padding-top: 120px;
+    margin: 0 auto;
+
+    &__about {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+    }
+
+    .tags-container {
+        float: left;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+
+        a {
+            @include buttonSquare($white, none);
+        }
+    }
+
+    .instagram-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .subscribe {
+        &__email {
+            width: 185px;
+            height: 40px;
+            border: 1px solid $lightgrey;
+            background: $black;
+            color: $white;
+            @include fontStyle(16, $roboto);
+            padding: 15px 10px;
+            margin-right: 10px;
+
+            &::placeholder {
+                color: $white;
+            }
+        }
+
+        &__submit {
+            padding: 10px;
+            color: $mustard;
+            border: 1px solid $mustard;
+            @include fontStyle(16, $roboto);
+            background: none;
+            transition: all 0.5s;
+
+            &:hover {
+                background: $mustard;
+                color: $black;
+            }
+        }
+    }
+}
+
+.follow-us {
+    text-align: center;
+    padding-bottom: 60px;
+
+    a {
+        @include buttonRounded($white, none, $black);
+        padding: 10px 15px;
+        @include fontStyle(16, $roboto);
+
+        &:hover {
+            color: $mustard;
+            background: $black;
+            border-color: $mustard;
+        }
+    }
+}
+
+.bottom {
+    background: lighten($black, 5);
+
+    &__container {
+        width: 65%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        @include fontStyle(16, $roboto);
+        padding: 25px 0;
+
+        &__policy {
+            a {
+                color: $white;
+                text-decoration: none;
+                margin-right: 10px;
+                display: inline-block;
+
+                &:last-child() {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    border-bottom: 1px solid $white;
+                }
+            }
+        }
+    }
+}
