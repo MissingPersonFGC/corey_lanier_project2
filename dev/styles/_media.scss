@@ -8,6 +8,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
     
 }
 
+img {
+    width: 100%;
+}
+
 .topbar {
     padding: 5px 75px;
 }
@@ -40,6 +44,114 @@ and (-webkit-min-device-pixel-ratio: 2) {
     &__item {
         span {
             padding-left: 5px;
+        }
+    }
+}
+
+.main-header {
+    &__slider {
+        display: none;
+        width: 0;
+    }
+
+    &__heading {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('../../images/main-image-1.png');
+
+        &__gallery-pan {
+            bottom: 45px;
+        }
+    }
+}
+
+.paragraph {
+    &--largest {
+        color: $black;
+    }
+}
+
+.first-gallery {
+    margin-top: 40px;
+    width: 100%;
+    justify-content: space-between;
+
+    &__item {
+        margin: 0;
+
+        &__rotated-text {
+            display: none;
+        }
+
+        &__headings {
+            left: 45px;
+            span {
+                @include fontStyle(15, $montserrat);
+            }
+        }
+
+        &2 img {
+            outline-offset: -10%;
+        }
+    }
+}
+
+.top-products {
+    margin-top: 50px;
+
+    &__top-container {
+        justify-content: space-between;
+    }
+
+    &__container {
+        width: 100%;
+
+        &::after {
+            display: none;
+        }
+
+        &__gallery {
+            margin-top: 20px;
+
+            &__item {
+                justify-content: space-between;
+                width: 20%;
+
+                &1 {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.onsale-products {
+    margin-top: 50px;
+
+    &__top-container {
+        justify-content: space-between;
+    }
+
+    &__container {
+        width: 100%;
+
+        &::after {
+            display: none;
+        }
+
+        &__gallery {
+            margin-top: 20px;
+
+            &__item {
+                justify-content: space-between;
+                width: 20%;
+
+                &1 {
+                    margin: 0;
+                }
+            }
         }
     }
 }
