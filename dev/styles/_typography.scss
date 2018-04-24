@@ -67,6 +67,10 @@
             text-decoration: line-through;
         }
     }
+
+    &--white {
+        color: $white;
+    }
 }
 
 .button {
@@ -115,4 +119,19 @@ h4 {
 .our-blog h3 {
     @include fontStyle(20, $montserrat);
     color: $black;
+}
+
+.footer-buttons__side {
+    h2 {
+        @include fontStyle(30, $montserrat);
+    }
+
+    p {
+        @include fontStyle(18, $montserrat);
+    }
+
+    a {
+        @include fontStyle(16, $montserrat);
+        font-weight: bold;
+    }
 }

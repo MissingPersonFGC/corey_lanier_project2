@@ -1,12 +1,43 @@
+footer {
+    width: 100%;
+    background: $black;
+    margin-top: 160px;
+}
+
 .footer-buttons {
     display: flex;
     justify-content: center;
 
     div {
         width: 50%;
+        padding: 20% 0 20%;
+        margin: 0 auto;
     }
 
     &__left {
         color: $white;
+        background: url('../../images/footer-1.png');
+        background-size: cover;
+
+        a {
+            @include buttonRounded($white, none, $white);
+            
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+
+    &__right {
+        background: url('../../images/footer-2.png');
+        background-size: cover;
+
+        a {
+            @include buttonRounded($black, none, $mustard);
+
+            &:hover {
+                color: $mustard;
+            }
+        }
     }
 }
