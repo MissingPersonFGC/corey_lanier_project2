@@ -7,7 +7,7 @@
 }
 
 .header2 {
-    @include fontStyle(30, $montserrat);
+    @include fontStyle(10, $montserrat);
     color: $black;
 }
 

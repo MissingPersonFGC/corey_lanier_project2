@@ -299,3 +299,236 @@ and (orientation : portrait) {
         }
     }
 }
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+
+    body {
+        overflow-x: hidden;
+    }
+    .topbar {
+        display: none;
+        height: 100vh;
+        position: absolute;
+        top: -100vh;
+        left: 0;
+        transition: all 0.5s ease;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 100%;
+
+    }
+
+    #toggle:checked ~ .topbar {
+        display: block;
+        top: 0;
+        background: $white;
+        z-index: 20;
+
+    }
+
+    label {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        transition: all 0.5s ease;
+        z-index: 25;
+    }
+
+    .nav {
+
+        &__list {
+            display: block;
+
+            &__item {
+
+                &:hover &__nested {
+                    display: block;
+                    position: relative;
+                }
+                &__nested {
+                    display: block;
+                    padding-left: 20px;
+                   
+                    &__item {
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-header {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+
+        &__slider {
+            display: none;
+        }
+
+        &__heading {
+            background-image: none;
+
+            .paragraph--largest {
+                display: none;
+            }
+
+            .header1 {
+                font-size: 20px;
+            }
+
+            &__gallery-pan {
+                display: none;
+            }
+
+            .inner-header-container {
+                .button {
+                    top: -75px;
+                    left: 200px;
+                    padding: 5px;
+
+                }
+            }
+        }
+    }
+
+    .header2 {
+        font-size: 15px;
+    }
+
+    .first-gallery {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        &__item {
+            margin: 0;
+
+            &__rotated-text {
+                display: none;
+            }
+
+            &__headings {
+                left: 15px;
+
+                span {
+                    font-size: 10px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    .top-products, .onsale-products {
+        margin-top: 50px;
+    
+        &__top-container {
+            justify-content: space-between;
+
+            &__slider {
+                display: none;
+            }
+        }
+    
+        &__container {
+            width: 100%;
+    
+            &::after {
+                display: none;
+            }
+    
+            &__gallery {
+                margin-top: 20px;
+    
+                &__item {
+                    justify-content: space-between;
+                    width: 20%;
+    
+                    &1 {
+                        margin: 0;
+                    }
+
+                    &__image__cart {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .paragraph {
+        &--grey {
+            font-size: 10px;
+        }
+
+        &--item-name, &--item-description {
+            font-size: 10px;
+        }
+
+        &--item-price {
+            font-size: 12px;
+
+            &-original {
+                font-size: 10px;
+            }
+        }
+
+        &--white {
+            font-size: 10px;
+        }
+    }
+
+    .sub-heading {
+        display: none;
+    }
+
+    .our-blog {
+        display: none;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
+    .footer-buttons {
+        display: none;
+    }
+
+    .footer-container {
+        padding-top: 15px;
+        width: 95%;
+        margin: 0 auto;
+        &__about {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .subscribe {
+            &__email {
+                width: 130px;
+                margin-bottom: 10px;
+                font-size: 10px;
+                padding: 5px;
+                height: 30px;
+            }
+
+            &__submit {
+                padding: 5px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .bottom {
+        &__container {
+            width: 100%;
+        }
+    }
+}
