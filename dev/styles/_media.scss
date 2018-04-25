@@ -288,6 +288,20 @@ and (orientation : portrait) {
         }
     }
 
+    .header2 {
+        font-size: 20px;
+    }
+
+    .paragraph--grey {
+        font-size: 14px;
+    }
+
+    .sub-heading {
+        &__rotated {
+            right: 50%;
+        }
+    }
+
     .our-blog {
         &__container {
             &__item1 {
