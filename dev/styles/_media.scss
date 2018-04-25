@@ -286,5 +286,16 @@ and (orientation : portrait) {
         }
     }
 
-    
+    .our-blog {
+        &__container {
+            &__item1 {
+                padding: 0;
+                padding-right: 5%;
+            }
+
+            &__item3 {
+                padding-top: 15px;;
+            }
+        }
+    }
 }
