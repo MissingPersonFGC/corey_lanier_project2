@@ -52,15 +52,18 @@ label {
                 list-style: none;
                 padding: 0;
                 display: none;
+                background: $white;
                 
                 &__item {
                     padding-top: 10px;
+                    padding-right: 5px;
                 }
             }
 
             &:hover &__nested {
                 display: block;
                 position: absolute;
+                z-index: 20;
             }
         }
 

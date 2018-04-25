@@ -191,6 +191,12 @@ and (max-device-width : 1024px)  {
             }
         }
     }
+
+    .top-products, .onsale-products {
+        &__container__gallery__item__image__cart {
+            bottom: 90px;
+        }
+    }
     
     footer {
         margin-top: 90px;
