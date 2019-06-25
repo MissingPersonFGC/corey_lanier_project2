@@ -33,6 +33,9 @@ body {
 label {
     display: none;
 }
+img {
+    width: 100%;
+}
 
 .nav {
 
@@ -229,9 +232,9 @@ label {
         
 
         &__gallery {
-            display: flex;
-            justify-content: space-around;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 3%;
             margin-top: 75px;
 
             &__item {
@@ -240,10 +243,6 @@ label {
                 flex-direction: column;
                 justify-content: flex-start;
                 position: relative;
-
-                &1 {
-                    margin-left: 50px;
-                }
 
                 &__image__cart {
                     position: absolute;
@@ -349,9 +348,9 @@ label {
         
 
         &__gallery {
-            display: flex;
-            justify-content: space-around;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 3%;
             margin-top: 75px;
 
             &__item {
@@ -360,10 +359,6 @@ label {
                 flex-direction: column;
                 justify-content: flex-start;
                 position: relative;
-
-                &1 {
-                    margin-left: 50px;
-                }
 
                 &__image__cart {
                     position: absolute;

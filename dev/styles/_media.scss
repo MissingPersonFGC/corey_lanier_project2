@@ -1,3 +1,9 @@
+@media (min-width: 1100px) {
+    .our-blog {
+        display: none;
+    }
+}
+
 // Tablet stylings
 
 @media only screen 
@@ -181,6 +187,7 @@ and (max-device-width : 1024px)  {
     .our-blog {
         width: 90%;
         margin-top: 70px;
+        dipslay: none;
     
         &__container {
     
